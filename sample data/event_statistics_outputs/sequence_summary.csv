@@ -1,0 +1,297 @@
+condition_name,sequence,count
+no_tilt,active_freeze -> passive_freeze -> passive -> eye -> active,8
+no_tilt,active_freeze -> passive_freeze -> passive -> active,7
+no_tilt,active_freeze -> passive_freeze -> passive,7
+no_tilt,active_freeze -> passive_freeze -> passive -> active -> eye,6
+no_tilt,eye -> active_freeze -> passive_freeze -> passive -> active,5
+no_tilt,eye -> active_freeze -> passive_freeze -> active -> passive,4
+no_tilt,pupil -> active_freeze -> passive_freeze -> passive,4
+no_tilt,active_freeze -> passive_freeze -> eye -> active -> passive,4
+no_tilt,active -> passive_freeze -> passive -> active_freeze -> eye,3
+no_tilt,passive -> active -> eye,3
+no_tilt,passive -> active_freeze -> active -> eye -> pupil,3
+no_tilt,pupil -> active_freeze -> passive_freeze -> passive -> active,3
+no_tilt,pupil -> active_freeze -> passive_freeze -> passive -> active -> eye,3
+no_tilt,pupil -> eye -> active -> passive_freeze -> passive -> active_freeze,3
+no_tilt,active -> passive -> active_freeze -> passive_freeze -> eye,3
+no_tilt,passive -> active_freeze -> active -> pupil -> eye,3
+no_tilt,active_freeze -> passive_freeze -> passive -> eye,3
+no_tilt,active_freeze -> passive_freeze -> active -> passive,3
+no_tilt,active_freeze -> passive_freeze -> active -> passive -> eye,3
+no_tilt,pupil -> active_freeze -> passive -> passive_freeze -> active,2
+no_tilt,passive_freeze -> passive -> active_freeze,2
+no_tilt,pupil -> active_freeze -> passive_freeze -> eye,2
+no_tilt,active_freeze -> passive_freeze -> passive -> pupil -> eye -> active,2
+no_tilt,active_freeze -> passive_freeze -> passive -> pupil,2
+no_tilt,pupil -> active_freeze -> passive_freeze -> passive -> eye,2
+no_tilt,active_freeze -> passive_freeze -> passive -> eye -> active -> pupil,2
+no_tilt,pupil -> eye -> active_freeze -> passive_freeze -> passive -> active,2
+no_tilt,pupil -> passive -> active_freeze -> active,2
+no_tilt,active_freeze -> passive_freeze,2
+no_tilt,active -> passive -> active_freeze -> eye,2
+no_tilt,passive -> active -> eye -> active_freeze,2
+no_tilt,active_freeze -> passive_freeze -> passive -> active -> eye -> pupil,2
+no_tilt,eye -> active -> passive -> active_freeze -> passive_freeze,2
+no_tilt,active_freeze -> passive -> active,2
+no_tilt,eye -> active_freeze -> passive_freeze -> pupil -> active -> passive,2
+no_tilt,active -> active_freeze -> passive_freeze -> passive,1
+no_tilt,eye -> active -> passive -> passive_freeze -> pupil -> active_freeze,1
+no_tilt,eye -> active -> passive_freeze -> passive -> active_freeze -> pupil,1
+no_tilt,eye -> active -> passive_freeze -> passive -> pupil -> active_freeze,1
+no_tilt,eye -> active_freeze -> passive -> active -> passive_freeze,1
+no_tilt,eye -> active_freeze -> passive -> active -> pupil,1
+no_tilt,eye -> active_freeze -> passive_freeze -> active -> passive -> pupil,1
+no_tilt,eye -> active_freeze -> passive_freeze -> passive,1
+no_tilt,eye -> active_freeze -> passive_freeze -> passive -> pupil,1
+no_tilt,eye -> active_freeze -> pupil -> passive -> active,1
+no_tilt,eye -> passive -> active_freeze -> active,1
+no_tilt,eye -> passive -> active_freeze -> active -> pupil,1
+no_tilt,eye -> passive -> active_freeze -> pupil -> active,1
+no_tilt,eye -> passive_freeze -> active -> active_freeze -> passive,1
+no_tilt,eye -> passive_freeze -> active -> passive -> active_freeze,1
+no_tilt,eye -> passive_freeze -> active -> pupil -> active_freeze -> passive,1
+no_tilt,eye -> passive_freeze -> active_freeze -> passive -> active,1
+no_tilt,eye -> passive_freeze -> passive -> active_freeze -> pupil -> active,1
+no_tilt,eye -> passive_freeze -> pupil -> active -> passive -> active_freeze,1
+no_tilt,passive -> active -> eye -> pupil -> active_freeze,1
+no_tilt,passive -> active_freeze,1
+no_tilt,passive -> active_freeze -> active -> eye,1
+no_tilt,passive -> active_freeze -> active -> pupil,1
+no_tilt,passive -> active_freeze -> eye -> pupil -> active,1
+no_tilt,passive -> active_freeze -> passive_freeze,1
+no_tilt,passive -> active_freeze -> passive_freeze -> active,1
+no_tilt,passive -> active_freeze -> passive_freeze -> eye -> active,1
+no_tilt,passive -> active_freeze -> passive_freeze -> eye -> pupil -> active,1
+no_tilt,eye -> active -> active_freeze -> pupil -> passive_freeze -> passive,1
+no_tilt,active_freeze -> passive_freeze -> pupil -> passive -> eye -> active,1
+no_tilt,active_freeze -> passive_freeze -> pupil -> passive -> eye,1
+no_tilt,active_freeze -> passive -> eye -> active -> passive_freeze -> pupil,1
+no_tilt,active -> passive -> eye -> active_freeze -> passive_freeze -> pupil,1
+no_tilt,active -> passive -> passive_freeze -> pupil -> active_freeze -> eye,1
+no_tilt,active -> passive -> pupil -> eye,1
+no_tilt,active -> passive -> pupil -> eye -> active_freeze -> passive_freeze,1
+no_tilt,active -> passive_freeze -> active_freeze -> eye -> passive -> pupil,1
+no_tilt,active -> passive_freeze -> active_freeze -> passive -> eye,1
+no_tilt,active -> passive_freeze -> passive -> active_freeze,1
+no_tilt,active -> passive_freeze -> passive -> active_freeze -> pupil,1
+no_tilt,active -> passive_freeze -> passive -> active_freeze -> pupil -> eye,1
+no_tilt,active_freeze -> active -> passive -> passive_freeze -> eye -> pupil,1
+no_tilt,active_freeze -> passive -> active -> eye,1
+no_tilt,active_freeze -> passive -> active -> pupil -> eye,1
+no_tilt,active_freeze -> passive -> passive_freeze -> pupil -> active -> eye,1
+no_tilt,active_freeze -> passive_freeze -> pupil -> passive -> active,1
+no_tilt,active_freeze -> passive -> pupil -> active,1
+no_tilt,active_freeze -> passive -> pupil -> passive_freeze,1
+no_tilt,active_freeze -> passive_freeze -> active -> passive -> eye -> pupil,1
+no_tilt,active_freeze -> passive_freeze -> eye,1
+no_tilt,active_freeze -> passive_freeze -> eye -> passive,1
+no_tilt,active_freeze -> passive_freeze -> eye -> passive -> pupil -> active,1
+no_tilt,active_freeze -> passive_freeze -> eye -> pupil,1
+no_tilt,active_freeze -> passive_freeze -> passive -> active -> pupil,1
+no_tilt,active_freeze -> passive_freeze -> passive -> eye -> pupil,1
+no_tilt,active_freeze -> passive_freeze -> passive -> pupil -> active -> eye,1
+no_tilt,active_freeze -> passive_freeze -> passive -> pupil -> eye,1
+no_tilt,active_freeze -> passive_freeze -> pupil -> eye -> active -> passive,1
+no_tilt,passive -> active_freeze -> passive_freeze -> pupil -> eye,1
+no_tilt,passive -> active_freeze -> passive_freeze -> pupil -> eye -> active,1
+no_tilt,passive -> eye -> active -> active_freeze,1
+no_tilt,pupil -> passive_freeze -> passive -> active_freeze -> active -> eye,1
+no_tilt,pupil -> passive_freeze -> passive -> active_freeze -> eye -> active,1
+no_tilt,pupil -> passive -> active_freeze -> eye -> passive_freeze,1
+no_tilt,pupil -> passive -> eye -> active -> active_freeze,1
+no_tilt,pupil -> passive -> active_freeze -> eye -> active,1
+no_tilt,passive -> pupil -> active_freeze -> passive_freeze -> active -> eye,1
+no_tilt,pupil -> active_freeze -> passive -> passive_freeze,1
+no_tilt,passive_freeze -> active -> eye -> passive -> active_freeze -> pupil,1
+no_tilt,passive_freeze -> active -> passive -> eye -> active_freeze -> pupil,1
+no_tilt,passive_freeze -> active_freeze -> active -> eye -> pupil -> passive,1
+no_tilt,passive_freeze -> eye -> active -> passive -> active_freeze -> pupil,1
+no_tilt,passive_freeze -> passive -> active_freeze -> eye,1
+no_tilt,pupil -> active -> eye -> passive -> passive_freeze -> active_freeze,1
+no_tilt,pupil -> active -> passive -> active_freeze -> passive_freeze,1
+no_tilt,pupil -> active -> passive_freeze -> eye -> passive -> active_freeze,1
+no_tilt,pupil -> active_freeze -> eye -> passive -> active,1
+no_tilt,pupil -> active_freeze -> passive -> active,1
+no_tilt,pupil -> active_freeze -> passive -> active -> eye,1
+no_tilt,pupil -> active_freeze -> passive -> eye -> active,1
+no_tilt,pupil -> active_freeze -> passive_freeze,1
+no_tilt,pupil -> passive -> active_freeze -> active -> eye,1
+no_tilt,pupil -> active_freeze -> passive_freeze -> active,1
+no_tilt,pupil -> active_freeze -> passive_freeze -> active -> passive,1
+no_tilt,pupil -> active_freeze -> passive_freeze -> active -> passive -> eye,1
+no_tilt,pupil -> active_freeze -> passive_freeze -> eye -> active -> passive,1
+no_tilt,pupil -> active_freeze -> passive_freeze -> eye -> passive -> active,1
+no_tilt,pupil -> eye -> active -> passive -> active_freeze -> passive_freeze,1
+no_tilt,pupil -> eye -> active_freeze -> passive_freeze -> active -> passive,1
+no_tilt,pupil -> eye -> passive,1
+no_tilt,pupil -> eye -> passive -> active_freeze -> active,1
+no_tilt,pupil -> eye -> passive -> active_freeze -> active -> passive_freeze,1
+no_tilt,pupil -> eye -> passive -> active_freeze -> passive_freeze -> active,1
+no_tilt,pupil -> passive,1
+tilt_left,active -> passive -> eye -> pupil,20
+tilt_left,passive -> active_freeze -> active -> eye -> pupil,14
+tilt_left,active -> passive_freeze -> passive -> eye -> pupil,9
+tilt_left,active -> passive -> pupil -> eye,6
+tilt_left,pupil -> active_freeze -> passive_freeze -> active -> passive -> eye,5
+tilt_left,active -> passive_freeze -> passive -> pupil -> eye,5
+tilt_left,passive_freeze -> active -> passive -> eye -> pupil,5
+tilt_left,pupil -> passive -> eye,5
+tilt_left,pupil -> active -> passive_freeze -> passive -> eye,4
+tilt_left,passive -> active -> eye -> pupil,4
+tilt_left,pupil -> passive -> active_freeze -> eye -> active,4
+tilt_left,pupil -> passive_freeze -> passive -> eye,4
+tilt_left,passive -> pupil -> eye,4
+tilt_left,pupil -> active_freeze -> passive_freeze -> passive -> active -> eye,4
+tilt_left,pupil -> active -> passive -> eye,4
+tilt_left,passive_freeze -> active -> passive -> pupil -> eye,4
+tilt_left,passive -> eye -> pupil,4
+tilt_left,passive -> active_freeze -> active -> pupil -> eye,3
+tilt_left,active_freeze -> passive_freeze -> passive -> active -> eye -> pupil,3
+tilt_left,active_freeze -> passive_freeze -> active -> passive -> pupil -> eye,3
+tilt_left,active_freeze -> passive_freeze -> active -> passive -> eye -> pupil,3
+tilt_left,pupil -> passive -> active_freeze -> active -> eye,3
+tilt_left,pupil -> passive_freeze -> active -> passive -> eye,3
+tilt_left,eye -> active -> passive -> pupil -> passive_freeze,3
+tilt_left,pupil -> active -> passive -> eye -> active_freeze,3
+tilt_left,pupil -> active_freeze -> active -> passive -> eye,3
+tilt_left,pupil -> eye -> passive -> active_freeze -> active,2
+tilt_left,eye -> passive_freeze -> active -> passive -> pupil,2
+tilt_left,passive_freeze -> eye -> active -> passive -> pupil,2
+tilt_left,active -> passive -> active_freeze -> eye -> pupil,2
+tilt_left,passive -> active_freeze -> eye -> active -> pupil,2
+tilt_left,active_freeze -> passive_freeze -> active -> passive -> eye,2
+tilt_left,eye -> active -> passive -> pupil,2
+tilt_left,passive_freeze -> passive -> eye -> pupil,2
+tilt_left,active -> passive_freeze -> passive -> active_freeze -> eye -> pupil,2
+tilt_left,pupil -> eye -> active_freeze -> passive -> active -> passive_freeze,1
+tilt_left,pupil -> passive -> active_freeze -> passive_freeze -> eye -> active,1
+tilt_left,passive_freeze -> passive -> pupil -> eye -> active_freeze -> active,1
+tilt_left,passive_freeze -> active_freeze -> passive -> eye -> active,1
+tilt_left,pupil -> passive -> eye -> passive_freeze,1
+tilt_left,pupil -> active_freeze -> passive_freeze -> passive -> eye -> active,1
+tilt_left,passive_freeze -> passive -> active_freeze -> pupil -> active -> eye,1
+tilt_left,pupil -> active_freeze -> passive -> eye -> active -> passive_freeze,1
+tilt_left,pupil -> eye -> passive,1
+tilt_left,pupil -> active_freeze -> passive -> active -> eye,1
+tilt_left,pupil -> eye -> passive -> active,1
+tilt_left,pupil -> active -> passive -> eye -> passive_freeze,1
+tilt_left,pupil -> eye -> passive -> active -> active_freeze,1
+tilt_left,pupil -> passive -> active -> eye -> active_freeze,1
+tilt_left,pupil -> active -> passive -> eye -> passive_freeze -> active_freeze,1
+tilt_left,pupil -> eye -> passive_freeze -> passive,1
+tilt_left,pupil -> active -> passive -> active_freeze -> eye,1
+tilt_left,pupil -> passive_freeze -> eye -> passive,1
+tilt_left,eye -> active -> passive -> active_freeze -> pupil,1
+tilt_left,passive -> pupil -> active -> eye,1
+tilt_left,passive -> eye -> pupil -> passive_freeze,1
+tilt_left,eye -> active -> pupil -> passive,1
+tilt_left,active -> passive -> eye -> active_freeze -> pupil -> passive_freeze,1
+tilt_left,active -> passive -> eye -> passive_freeze -> pupil,1
+tilt_left,active -> passive_freeze -> eye -> passive -> pupil,1
+tilt_left,active -> passive_freeze -> eye -> passive -> pupil -> active_freeze,1
+tilt_left,active -> passive_freeze -> passive -> eye -> pupil -> active_freeze,1
+tilt_left,active_freeze -> eye -> active -> passive -> passive_freeze -> pupil,1
+tilt_left,active_freeze -> passive_freeze -> passive -> active -> eye,1
+tilt_left,active_freeze -> passive_freeze -> passive -> pupil -> active -> eye,1
+tilt_left,active_freeze -> passive_freeze -> pupil -> passive -> active -> eye,1
+tilt_left,eye -> active -> passive_freeze -> passive -> pupil,1
+tilt_left,eye -> active_freeze -> passive_freeze -> active -> passive -> pupil,1
+tilt_left,eye -> active_freeze -> passive_freeze -> passive -> active -> pupil,1
+tilt_left,eye -> passive -> active -> pupil,1
+tilt_left,eye -> passive -> active -> pupil -> active_freeze,1
+tilt_left,eye -> passive -> active_freeze -> active -> pupil,1
+tilt_left,eye -> passive_freeze -> passive -> pupil,1
+tilt_left,passive -> active -> eye -> active_freeze -> pupil,1
+tilt_left,passive -> active -> eye -> pupil -> active_freeze,1
+tilt_left,passive -> active -> pupil -> eye,1
+tilt_left,passive -> active_freeze -> active -> pupil,1
+tilt_left,passive -> active_freeze -> pupil -> active -> eye,1
+tilt_left,passive -> active_freeze -> pupil -> eye -> active,1
+tilt_left,passive -> active_freeze -> pupil -> eye -> active -> passive_freeze,1
+tilt_right,active_freeze -> passive_freeze -> active -> passive -> eye -> pupil,20
+tilt_right,active -> passive -> eye -> pupil,10
+tilt_right,active_freeze -> passive_freeze -> passive -> active -> eye -> pupil,10
+tilt_right,pupil -> active_freeze -> passive_freeze -> active -> passive -> eye,9
+tilt_right,active -> passive_freeze -> passive -> eye -> pupil,8
+tilt_right,passive_freeze -> active -> passive -> eye -> pupil,6
+tilt_right,passive -> active_freeze -> active -> eye -> pupil,6
+tilt_right,passive -> active -> eye -> pupil,5
+tilt_right,active_freeze -> passive_freeze -> active -> passive -> pupil -> eye,5
+tilt_right,eye -> active -> passive -> pupil,4
+tilt_right,pupil -> active -> passive_freeze -> passive -> eye,4
+tilt_right,pupil -> passive_freeze -> active -> passive -> eye,4
+tilt_right,pupil -> active_freeze -> passive_freeze -> passive -> active -> eye,4
+tilt_right,pupil -> passive -> active_freeze -> active -> eye,4
+tilt_right,eye -> active -> passive -> pupil -> active_freeze,3
+tilt_right,active -> passive_freeze -> passive -> pupil -> eye,3
+tilt_right,active -> passive_freeze -> eye -> passive -> pupil,3
+tilt_right,passive_freeze -> eye -> active -> passive -> pupil,3
+tilt_right,pupil -> active -> passive_freeze -> passive -> eye -> active_freeze,3
+tilt_right,passive -> eye -> pupil,3
+tilt_right,pupil -> active_freeze -> passive_freeze -> passive -> eye -> active,3
+tilt_right,pupil -> passive -> eye,2
+tilt_right,active -> passive_freeze -> passive -> eye -> pupil -> active_freeze,2
+tilt_right,active -> passive_freeze -> passive -> eye -> active_freeze -> pupil,2
+tilt_right,active_freeze -> active -> passive -> eye -> pupil,2
+tilt_right,active_freeze -> passive -> active -> eye -> pupil,2
+tilt_right,active_freeze -> active -> passive -> eye -> passive_freeze -> pupil,2
+tilt_right,active -> passive_freeze -> passive -> eye,2
+tilt_right,pupil -> active -> passive -> eye,2
+tilt_right,active -> passive -> pupil -> eye,2
+tilt_right,pupil -> active_freeze -> passive -> active -> eye,2
+tilt_right,passive -> active_freeze -> active -> pupil -> eye,2
+tilt_right,eye -> active -> passive_freeze -> passive -> pupil,2
+tilt_right,pupil -> passive -> active -> eye -> active_freeze,2
+tilt_right,active_freeze -> passive_freeze -> passive -> eye -> active -> pupil,2
+tilt_right,pupil -> eye -> passive -> active_freeze -> active,2
+tilt_right,pupil -> active_freeze -> active -> passive -> eye -> passive_freeze,1
+tilt_right,passive -> active_freeze -> pupil -> active -> eye,1
+tilt_right,passive_freeze -> active -> passive -> active_freeze -> eye -> pupil,1
+tilt_right,passive_freeze -> active -> passive -> eye -> pupil -> active_freeze,1
+tilt_right,passive_freeze -> active_freeze -> passive -> active -> eye -> pupil,1
+tilt_right,passive_freeze -> passive -> active -> eye -> active_freeze -> pupil,1
+tilt_right,passive_freeze -> pupil -> active -> passive -> eye -> active_freeze,1
+tilt_right,pupil -> active -> passive -> active_freeze -> eye,1
+tilt_right,pupil -> active -> passive -> active_freeze -> passive_freeze -> eye,1
+tilt_right,pupil -> active -> passive -> eye -> active_freeze,1
+tilt_right,pupil -> active -> passive -> eye -> passive_freeze,1
+tilt_right,pupil -> eye -> active -> passive,1
+tilt_right,passive -> active_freeze -> active -> eye,1
+tilt_right,pupil -> eye -> active -> passive -> active_freeze,1
+tilt_right,pupil -> eye -> active -> passive_freeze -> passive,1
+tilt_right,pupil -> eye -> active_freeze -> passive_freeze -> active -> passive,1
+tilt_right,pupil -> eye -> passive,1
+tilt_right,pupil -> eye -> passive -> active -> active_freeze,1
+tilt_right,pupil -> passive -> active_freeze -> active,1
+tilt_right,pupil -> passive -> active_freeze -> passive_freeze -> active -> eye,1
+tilt_right,pupil -> passive -> eye -> active -> active_freeze -> passive_freeze,1
+tilt_right,pupil -> passive -> eye -> passive_freeze,1
+tilt_right,pupil -> passive_freeze -> active_freeze -> passive -> eye -> active,1
+tilt_right,passive -> active_freeze -> active -> eye -> passive_freeze -> pupil,1
+tilt_right,passive -> active -> eye -> pupil -> passive_freeze,1
+tilt_right,active -> passive -> eye,1
+tilt_right,active_freeze -> passive_freeze -> passive -> active -> pupil -> eye,1
+tilt_right,active -> passive -> eye -> active_freeze -> pupil,1
+tilt_right,active -> passive -> eye -> passive_freeze -> pupil -> active_freeze,1
+tilt_right,active -> passive -> passive_freeze -> eye -> pupil,1
+tilt_right,active -> passive_freeze -> passive -> active_freeze -> eye -> pupil,1
+tilt_right,active -> passive_freeze -> pupil -> passive -> eye -> active_freeze,1
+tilt_right,active_freeze -> eye -> active -> passive -> pupil,1
+tilt_right,active_freeze -> passive -> active -> eye -> pupil -> passive_freeze,1
+tilt_right,active_freeze -> passive -> active -> pupil -> eye,1
+tilt_right,active_freeze -> passive -> pupil -> active -> eye,1
+tilt_right,active_freeze -> passive -> pupil -> active -> eye -> passive_freeze,1
+tilt_right,active_freeze -> passive_freeze -> passive -> eye -> pupil,1
+tilt_right,eye -> passive_freeze -> active -> passive -> pupil -> active_freeze,1
+tilt_right,active_freeze -> passive_freeze -> passive -> eye -> pupil -> active,1
+tilt_right,active_freeze -> passive_freeze -> pupil -> active -> passive -> eye,1
+tilt_right,active_freeze -> pupil -> active -> passive -> eye,1
+tilt_right,active_freeze -> pupil -> eye -> active -> passive -> passive_freeze,1
+tilt_right,eye -> active -> passive -> active_freeze -> pupil -> passive_freeze,1
+tilt_right,eye -> active -> passive -> passive_freeze -> active_freeze -> pupil,1
+tilt_right,eye -> active_freeze -> passive_freeze -> active -> passive -> pupil,1
+tilt_right,eye -> active_freeze -> passive_freeze -> passive -> active -> pupil,1
+tilt_right,eye -> passive -> pupil -> active_freeze -> active,1
+tilt_right,eye -> passive_freeze -> active -> passive -> pupil,1
+tilt_right,active_freeze -> passive_freeze -> eye -> passive -> active -> pupil,1
+tilt_right,pupil -> passive_freeze -> passive -> eye,1

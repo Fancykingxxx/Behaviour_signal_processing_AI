@@ -1,0 +1,278 @@
+================================================================================
+ESSENTIAL STATISTICAL SUMMARY
+================================================================================
+Input CSV: C:\Users\t54547fj\OneDrive - The University of Manchester\Documents\GitHub\Behaviour_signal_processing_AI\sample data\events_summary.csv
+Total trials: 600
+Conditions: tilt_left, tilt_right, no_tilt
+
+--------------------------------------------------------------------------------
+1. TRIAL COUNTS BY CONDITION
+--------------------------------------------------------------------------------
+tilt_left: 195
+tilt_right: 201
+no_tilt: 204
+
+--------------------------------------------------------------------------------
+2. EVENT OCCURRENCE RATES BY CONDITION
+--------------------------------------------------------------------------------
+Pupil dilation:
+  tilt_left: rate=0.9795 (191/195)
+  tilt_right: rate=0.9801 (197/201)
+  no_tilt: rate=0.5588 (114/204)
+
+Eye movement:
+  tilt_left: rate=0.9949 (194/195)
+  tilt_right: rate=0.9950 (200/201)
+  no_tilt: rate=0.7353 (150/204)
+
+Active locomotion:
+  tilt_left: rate=0.8718 (170/195)
+  tilt_right: rate=0.9552 (192/201)
+  no_tilt: rate=0.7941 (162/204)
+
+Passive locomotion:
+  tilt_left: rate=1.0000 (195/195)
+  tilt_right: rate=1.0000 (201/201)
+  no_tilt: rate=0.9608 (196/204)
+
+Active freezing:
+  tilt_left: rate=0.4513 (88/195)
+  tilt_right: rate=0.6368 (128/201)
+  no_tilt: rate=0.9706 (198/204)
+
+Passive freezing:
+  tilt_left: rate=0.4718 (92/195)
+  tilt_right: rate=0.6567 (132/201)
+  no_tilt: rate=0.7941 (162/204)
+
+--------------------------------------------------------------------------------
+3. EVENT TIMING SUMMARY BY CONDITION
+--------------------------------------------------------------------------------
+Pupil dilation time:
+  tilt_left: n=191, mean=2.3084, median=2.2000, std=0.3764, sem=0.0272
+  tilt_right: n=197, mean=2.4635, median=2.3000, std=0.4587, sem=0.0327
+  no_tilt: n=114, mean=2.3175, median=2.0500, std=0.4699, sem=0.0440
+
+Eye movement time:
+  tilt_left: n=194, mean=2.1799, median=2.2000, std=0.1471, sem=0.0106
+  tilt_right: n=200, mean=2.2025, median=2.2000, std=0.1317, sem=0.0093
+  no_tilt: n=150, mean=2.3813, median=2.2000, std=0.4469, sem=0.0365
+
+Active locomotion time:
+  tilt_left: n=170, mean=2.0850, median=2.0500, std=0.1908, sem=0.0146
+  tilt_right: n=192, mean=2.0984, median=2.0500, std=0.2177, sem=0.0157
+  no_tilt: n=162, mean=2.3244, median=2.1500, std=0.4551, sem=0.0358
+
+Passive locomotion time:
+  tilt_left: n=195, mean=2.0346, median=2.0500, std=0.0372, sem=0.0027
+  tilt_right: n=201, mean=2.0520, median=2.0500, std=0.0357, sem=0.0025
+  no_tilt: n=196, mean=2.1217, median=2.0500, std=0.2414, sem=0.0172
+
+Active freezing time:
+  tilt_left: n=88, mean=2.1278, median=2.0000, std=0.3418, sem=0.0364
+  tilt_right: n=128, mean=2.1523, median=2.0000, std=0.3741, sem=0.0331
+  no_tilt: n=198, mean=2.0750, median=2.0000, std=0.2313, sem=0.0164
+
+Passive freezing time:
+  tilt_left: n=92, mean=2.1375, median=2.0000, std=0.4226, sem=0.0441
+  tilt_right: n=132, mean=2.0610, median=2.0000, std=0.1984, sem=0.0173
+  no_tilt: n=162, mean=2.0463, median=2.0000, std=0.1148, sem=0.0090
+
+--------------------------------------------------------------------------------
+4. DERIVED TIMING DIFFERENCES
+--------------------------------------------------------------------------------
+pupil_minus_eye:
+  tilt_left: n=190, mean=0.1284, median=0.0500, std=0.4210, sem=0.0305
+  tilt_right: n=196, mean=0.2635, median=0.1500, std=0.4843, sem=0.0346
+  no_tilt: n=88, mean=-0.0063, median=0.0000, std=0.6016, sem=0.0641
+
+pupil_minus_active:
+  tilt_left: n=166, mean=0.2413, median=0.2000, std=0.4643, sem=0.0360
+  tilt_right: n=188, mean=0.3673, median=0.2500, std=0.5204, sem=0.0380
+  no_tilt: n=92, mean=0.0185, median=-0.0750, std=0.6892, sem=0.0718
+
+pupil_minus_passive:
+  tilt_left: n=191, mean=0.2749, median=0.2000, std=0.3825, sem=0.0277
+  tilt_right: n=197, mean=0.4114, median=0.2500, std=0.4602, sem=0.0328
+  no_tilt: n=109, mean=0.2119, median=0.0000, std=0.5146, sem=0.0493
+
+passive_minus_active:
+  tilt_left: n=170, mean=-0.0521, median=0.0000, std=0.1979, sem=0.0152
+  tilt_right: n=192, mean=-0.0477, median=0.0000, std=0.2191, sem=0.0158
+  no_tilt: n=161, mean=-0.2084, median=-0.0500, std=0.4844, sem=0.0382
+
+eye_minus_active:
+  tilt_left: n=169, mean=0.0953, median=0.1500, std=0.2147, sem=0.0165
+  tilt_right: n=191, mean=0.1058, median=0.1500, std=0.2032, sem=0.0147
+  no_tilt: n=131, mean=0.0328, median=0.0000, std=0.6001, sem=0.0524
+
+--------------------------------------------------------------------------------
+5. MOST COMMON EVENT SEQUENCES BY CONDITION
+--------------------------------------------------------------------------------
+tilt_left:
+  active -> passive -> eye -> pupil: 20
+  passive -> active_freeze -> active -> eye -> pupil: 14
+  active -> passive_freeze -> passive -> eye -> pupil: 9
+  active -> passive -> pupil -> eye: 6
+  pupil -> active_freeze -> passive_freeze -> active -> passive -> eye: 5
+  active -> passive_freeze -> passive -> pupil -> eye: 5
+  passive_freeze -> active -> passive -> eye -> pupil: 5
+  pupil -> passive -> eye: 5
+  pupil -> passive -> active_freeze -> eye -> active: 4
+  pupil -> active -> passive_freeze -> passive -> eye: 4
+
+tilt_right:
+  active_freeze -> passive_freeze -> active -> passive -> eye -> pupil: 20
+  active -> passive -> eye -> pupil: 10
+  active_freeze -> passive_freeze -> passive -> active -> eye -> pupil: 10
+  pupil -> active_freeze -> passive_freeze -> active -> passive -> eye: 9
+  active -> passive_freeze -> passive -> eye -> pupil: 8
+  passive_freeze -> active -> passive -> eye -> pupil: 6
+  passive -> active_freeze -> active -> eye -> pupil: 6
+  passive -> active -> eye -> pupil: 5
+  active_freeze -> passive_freeze -> active -> passive -> pupil -> eye: 5
+  pupil -> active_freeze -> passive_freeze -> passive -> active -> eye: 4
+
+no_tilt:
+  active_freeze -> passive_freeze -> passive -> eye -> active: 8
+  active_freeze -> passive_freeze -> passive -> active: 7
+  active_freeze -> passive_freeze -> passive: 7
+  active_freeze -> passive_freeze -> passive -> active -> eye: 6
+  eye -> active_freeze -> passive_freeze -> passive -> active: 5
+  eye -> active_freeze -> passive_freeze -> active -> passive: 4
+  pupil -> active_freeze -> passive_freeze -> passive: 4
+  active_freeze -> passive_freeze -> eye -> active -> passive: 4
+  active_freeze -> passive_freeze -> active -> passive: 3
+  passive -> active -> eye: 3
+
+--------------------------------------------------------------------------------
+6. CORRELATION MATRIX OF TIMING VARIABLES
+--------------------------------------------------------------------------------
+                             pupil_dilation_time_sec  eye_movement_time_sec  active_locomotion_time_sec  passive_locomotion_time_sec  active_freezing_time_sec  passive_freezing_time_sec  pupil_minus_eye  pupil_minus_active  pupil_minus_passive  passive_minus_active  eye_minus_active
+pupil_dilation_time_sec                       1.0000                 0.0471                     -0.1201                      -0.0094                    0.0293                    -0.0065           0.8703              0.8583               0.9701                0.1215            0.1184
+eye_movement_time_sec                         0.0471                 1.0000                      0.2303                       0.0671                   -0.0689                    -0.0542          -0.4510             -0.1157               0.0523               -0.2027            0.5223
+active_locomotion_time_sec                   -0.1201                 0.2303                      1.0000                       0.1743                   -0.1738                    -0.0265          -0.2250             -0.6125              -0.1474               -0.9146           -0.7095
+passive_locomotion_time_sec                  -0.0094                 0.0671                      0.1743                       1.0000                   -0.0645                    -0.0774          -0.0065             -0.0626              -0.2520                0.2387           -0.1105
+active_freezing_time_sec                      0.0293                -0.0689                     -0.1738                      -0.0645                    1.0000                     0.1368           0.0743              0.1109               0.0365                0.1430            0.1094
+passive_freezing_time_sec                    -0.0065                -0.0542                     -0.0265                      -0.0774                    0.1368                     1.0000           0.0205             -0.0101               0.0137               -0.0088            0.0047
+pupil_minus_eye                               0.8703                -0.4510                     -0.2250                      -0.0065                    0.0743                     0.0205           1.0000              0.8378               0.8554                0.2296           -0.1224
+pupil_minus_active                            0.8583                -0.1157                     -0.6125                      -0.0626                    0.1109                    -0.0101           0.8378              1.0000               0.8522                0.5824            0.4393
+pupil_minus_passive                           0.9701                 0.0523                     -0.1474                      -0.2520                    0.0365                     0.0137           0.8554              0.8522               1.0000                0.0710            0.1462
+passive_minus_active                          0.1215                -0.2027                     -0.9146                       0.2387                    0.1430                    -0.0088           0.2296              0.5824               0.0710                1.0000            0.6527
+eye_minus_active                              0.1184                 0.5223                     -0.7095                      -0.1105                    0.1094                     0.0047          -0.1224              0.4393               0.1462                0.6527            1.0000
+
+--------------------------------------------------------------------------------
+7. EVENT OCCURRENCE STATISTICAL TESTS (FISHER EXACT)
+--------------------------------------------------------------------------------
+Pupil dilation:
+  tilt_left vs tilt_right: rate1=0.9795, rate2=0.9801, odds_ratio=0.9695, p=1.000000
+  tilt_left vs no_tilt: rate1=0.9795, rate2=0.5588, odds_ratio=37.6974, p=0.000000
+  tilt_right vs no_tilt: rate1=0.9801, rate2=0.5588, odds_ratio=38.8816, p=0.000000
+
+Eye movement:
+  tilt_left vs tilt_right: rate1=0.9949, rate2=0.9950, odds_ratio=0.9700, p=1.000000
+  tilt_left vs no_tilt: rate1=0.9949, rate2=0.7353, odds_ratio=69.8400, p=0.000000
+  tilt_right vs no_tilt: rate1=0.9950, rate2=0.7353, odds_ratio=72.0000, p=0.000000
+
+Active locomotion:
+  tilt_left vs tilt_right: rate1=0.8718, rate2=0.9552, odds_ratio=0.3187, p=0.003691
+  tilt_left vs no_tilt: rate1=0.8718, rate2=0.7941, odds_ratio=1.7630, p=0.044414
+  tilt_right vs no_tilt: rate1=0.9552, rate2=0.7941, odds_ratio=5.5309, p=0.000001
+
+Passive locomotion:
+  tilt_left vs tilt_right: rate1=1.0000, rate2=1.0000, odds_ratio=NaN, p=1.000000
+  tilt_left vs no_tilt: rate1=1.0000, rate2=0.9608, odds_ratio=inf, p=0.007381
+  tilt_right vs no_tilt: rate1=1.0000, rate2=0.9608, odds_ratio=inf, p=0.007293
+
+Active freezing:
+  tilt_left vs tilt_right: rate1=0.4513, rate2=0.6368, odds_ratio=0.4690, p=0.000271
+  tilt_left vs no_tilt: rate1=0.4513, rate2=0.9706, odds_ratio=0.0249, p=0.000000
+  tilt_right vs no_tilt: rate1=0.6368, rate2=0.9706, odds_ratio=0.0531, p=0.000000
+
+Passive freezing:
+  tilt_left vs tilt_right: rate1=0.4718, rate2=0.6567, odds_ratio=0.4669, p=0.000255
+  tilt_left vs no_tilt: rate1=0.4718, rate2=0.7941, odds_ratio=0.2316, p=0.000000
+  tilt_right vs no_tilt: rate1=0.6567, rate2=0.7941, odds_ratio=0.4960, p=0.002548
+
+--------------------------------------------------------------------------------
+8. TIMING STATISTICAL TESTS (MANN-WHITNEY U)
+--------------------------------------------------------------------------------
+Pupil dilation time:
+  tilt_left vs tilt_right: n1=191, mean1=2.3084, median1=2.2000; n2=197, mean2=2.4635, median2=2.3000; U=15434.0000, p=0.001902
+  tilt_left vs no_tilt: n1=191, mean1=2.3084, median1=2.2000; n2=114, mean2=2.3175, median2=2.0500; U=11961.0000, p=0.139756
+  tilt_right vs no_tilt: n1=197, mean1=2.4635, median1=2.3000; n2=114, mean2=2.3175, median2=2.0500; U=13691.5000, p=0.000998
+
+Eye movement time:
+  tilt_left vs tilt_right: n1=194, mean1=2.1799, median1=2.2000; n2=200, mean2=2.2025, median2=2.2000; U=15149.5000, p=0.000092
+  tilt_left vs no_tilt: n1=194, mean1=2.1799, median1=2.2000; n2=150, mean2=2.3813, median2=2.2000; U=12704.0000, p=0.040291
+  tilt_right vs no_tilt: n1=200, mean1=2.2025, median1=2.2000; n2=150, mean2=2.3813, median2=2.2000; U=13918.0000, p=0.241869
+
+Active locomotion time:
+  tilt_left vs tilt_right: n1=170, mean1=2.0850, median1=2.0500; n2=192, mean2=2.0984, median2=2.0500; U=14571.0000, p=0.064184
+  tilt_left vs no_tilt: n1=170, mean1=2.0850, median1=2.0500; n2=162, mean2=2.3244, median2=2.1500; U=7494.0000, p=0.000000
+  tilt_right vs no_tilt: n1=192, mean1=2.0984, median1=2.0500; n2=162, mean2=2.3244, median2=2.1500; U=9304.0000, p=0.000000
+
+Passive locomotion time:
+  tilt_left vs tilt_right: n1=195, mean1=2.0346, median1=2.0500; n2=201, mean2=2.0520, median2=2.0500; U=14543.0000, p=0.000001
+  tilt_left vs no_tilt: n1=195, mean1=2.0346, median1=2.0500; n2=196, mean2=2.1217, median2=2.0500; U=13497.5000, p=0.000000
+  tilt_right vs no_tilt: n1=201, mean1=2.0520, median1=2.0500; n2=196, mean2=2.1217, median2=2.0500; U=18483.0000, p=0.242462
+
+Active freezing time:
+  tilt_left vs tilt_right: n1=88, mean1=2.1278, median1=2.0000; n2=128, mean2=2.1523, median2=2.0000; U=5442.0000, p=0.585706
+  tilt_left vs no_tilt: n1=88, mean1=2.1278, median1=2.0000; n2=198, mean2=2.0750, median2=2.0000; U=8423.0000, p=0.573674
+  tilt_right vs no_tilt: n1=128, mean1=2.1523, median1=2.0000; n2=198, mean2=2.0750, median2=2.0000; U=12699.0000, p=0.968290
+
+Passive freezing time:
+  tilt_left vs tilt_right: n1=92, mean1=2.1375, median1=2.0000; n2=132, mean2=2.0610, median2=2.0000; U=6285.5000, p=0.479903
+  tilt_left vs no_tilt: n1=92, mean1=2.1375, median1=2.0000; n2=162, mean2=2.0463, median2=2.0000; U=7110.5000, p=0.400155
+  tilt_right vs no_tilt: n1=132, mean1=2.0610, median1=2.0000; n2=162, mean2=2.0463, median2=2.0000; U=9793.0000, p=0.074388
+
+pupil_minus_eye:
+  tilt_left vs tilt_right: n1=190, mean1=0.1284, median1=0.0500; n2=196, mean2=0.2635, median2=0.1500; U=15879.5000, p=0.012225
+  tilt_left vs no_tilt: n1=190, mean1=0.1284, median1=0.0500; n2=88, mean2=-0.0063, median2=0.0000; U=9516.5000, p=0.062912
+  tilt_right vs no_tilt: n1=196, mean1=0.2635, median1=0.1500; n2=88, mean2=-0.0063, median2=0.0000; U=10922.5000, p=0.000323
+
+pupil_minus_active:
+  tilt_left vs tilt_right: n1=166, mean1=0.2413, median1=0.2000; n2=188, mean2=0.3673, median2=0.2500; U=13411.0000, p=0.022259
+  tilt_left vs no_tilt: n1=166, mean1=0.2413, median1=0.2000; n2=92, mean2=0.0185, median2=-0.0750; U=10045.0000, p=0.000026
+  tilt_right vs no_tilt: n1=188, mean1=0.3673, median1=0.2500; n2=92, mean2=0.0185, median2=-0.0750; U=12006.0000, p=0.000000
+
+pupil_minus_passive:
+  tilt_left vs tilt_right: n1=191, mean1=0.2749, median1=0.2000; n2=197, mean2=0.4114, median2=0.2500; U=16287.0000, p=0.021854
+  tilt_left vs no_tilt: n1=191, mean1=0.2749, median1=0.2000; n2=109, mean2=0.2119, median2=0.0000; U=12260.0000, p=0.010184
+  tilt_right vs no_tilt: n1=197, mean1=0.4114, median1=0.2500; n2=109, mean2=0.2119, median2=0.0000; U=13553.0000, p=0.000137
+
+passive_minus_active:
+  tilt_left vs tilt_right: n1=170, mean1=-0.0521, median1=0.0000; n2=192, mean2=-0.0477, median2=0.0000; U=14999.0000, p=0.170640
+  tilt_left vs no_tilt: n1=170, mean1=-0.0521, median1=0.0000; n2=161, mean2=-0.2084, median2=-0.0500; U=16972.0000, p=0.000127
+  tilt_right vs no_tilt: n1=192, mean1=-0.0477, median1=0.0000; n2=161, mean2=-0.2084, median2=-0.0500; U=19972.0000, p=0.000002
+
+eye_minus_active:
+  tilt_left vs tilt_right: n1=169, mean1=0.0953, median1=0.1500; n2=191, mean2=0.1058, median2=0.1500; U=14975.0000, p=0.231992
+  tilt_left vs no_tilt: n1=169, mean1=0.0953, median1=0.1500; n2=131, mean2=0.0328, median2=0.0000; U=13614.5000, p=0.000613
+  tilt_right vs no_tilt: n1=191, mean1=0.1058, median1=0.1500; n2=131, mean2=0.0328, median2=0.0000; U=15718.0000, p=0.000088
+
+--------------------------------------------------------------------------------
+9. QUICK BIOLOGICAL HIGHLIGHTS
+--------------------------------------------------------------------------------
+Highest pupil dilation rate: tilt_right (0.9801)
+Highest eye movement rate: tilt_right (0.9950)
+Highest active locomotion rate: tilt_right (0.9552)
+Highest passive locomotion rate: tilt_left (1.0000)
+Highest active freezing rate: no_tilt (0.9706)
+Highest passive freezing rate: no_tilt (0.7941)
+Earliest pupil dilation time: tilt_left (2.3084 s)
+Earliest eye movement time: tilt_left (2.1799 s)
+Earliest active locomotion time: tilt_left (2.0850 s)
+Earliest passive locomotion time: tilt_left (2.0346 s)
+Earliest active freezing time: no_tilt (2.0750 s)
+Earliest passive freezing time: no_tilt (2.0463 s)
+
+Interpretation of passive_minus_active:
+  no_tilt: mean=-0.2084 s (passive earlier than active)
+  tilt_left: mean=-0.0521 s (passive earlier than active)
+  tilt_right: mean=-0.0477 s (passive earlier than active)
+
+================================================================================
+Summary saved to: C:\Users\t54547fj\OneDrive - The University of Manchester\Documents\GitHub\Behaviour_signal_processing_AI\sample data\essential_statistical_summary.txt
+================================================================================

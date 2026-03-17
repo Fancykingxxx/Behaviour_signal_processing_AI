@@ -1,0 +1,6 @@
+,pupil_dilation_happened,pupil_dilation_happened,pupil_dilation_happened,eye_movement_happened,eye_movement_happened,eye_movement_happened,active_locomotion_happened,active_locomotion_happened,active_locomotion_happened,passive_locomotion_happened,passive_locomotion_happened,passive_locomotion_happened,active_freezing_happened,active_freezing_happened,active_freezing_happened,passive_freezing_happened,passive_freezing_happened,passive_freezing_happened
+,mean,sum,count,mean,sum,count,mean,sum,count,mean,sum,count,mean,sum,count,mean,sum,count
+condition_name,,,,,,,,,,,,,,,,,,
+no_tilt,0.5588235294117647,114,204,0.7352941176470589,150,204,0.7941176470588235,162,204,0.9607843137254902,196,204,0.9705882352941176,198,204,0.7941176470588235,162,204
+tilt_left,0.9794871794871794,191,195,0.9948717948717949,194,195,0.8717948717948718,170,195,1.0,195,195,0.4512820512820513,88,195,0.4717948717948718,92,195
+tilt_right,0.9800995024875622,197,201,0.9950248756218906,200,201,0.9552238805970149,192,201,1.0,201,201,0.6368159203980099,128,201,0.6567164179104478,132,201

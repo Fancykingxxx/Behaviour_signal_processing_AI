@@ -1,0 +1,318 @@
+import json
+import os
+
+output_path = r"C:\Users\t54547fj\OneDrive - The University of Manchester\Documents\GitHub\Behaviour_signal_processing_AI\training_data_set\train_from_stats_v2.jsonl"
+
+examples = [
+    {
+        "id": "stats_ex_0001",
+        "task_type": "results_writing",
+        "instruction": "Write a concise Results paragraph for a behavioural neuroscience experiment.",
+        "input": (
+            "Total trials: 600. Conditions: tilt_left (195), tilt_right (201), no_tilt (204). "
+            "Pupil dilation rates: tilt_left 0.9795, tilt_right 0.9801, no_tilt 0.5588. "
+            "Eye movement rates: tilt_left 0.9949, tilt_right 0.9950, no_tilt 0.7353. "
+            "Active locomotion rates: tilt_left 0.8718, tilt_right 0.9552, no_tilt 0.7941. "
+            "Passive locomotion rates: tilt_left 1.0000, tilt_right 1.0000, no_tilt 0.9608."
+        ),
+        "output": (
+            "Vestibular tilting elicited highly reliable behavioural responses across multiple signal domains. "
+            "Both tilt conditions were associated with near-ceiling rates of pupil dilation and eye movement, "
+            "together with frequent active and passive locomotion. In contrast, no-tilt trials showed reduced "
+            "pupil and eye responses, indicating that perturbation robustly enhanced coordinated behavioural output."
+        )
+    },
+    {
+        "id": "stats_ex_0002",
+        "task_type": "condition_comparison",
+        "instruction": "Compare behavioural responses between a tilt condition and a no-tilt condition.",
+        "input": (
+            "Condition A: tilt_left. Pupil rate 0.9795, eye rate 0.9949, active locomotion rate 0.8718, "
+            "passive locomotion rate 1.0000. "
+            "Condition B: no_tilt. Pupil rate 0.5588, eye rate 0.7353, active locomotion rate 0.7941, "
+            "passive locomotion rate 0.9608."
+        ),
+        "output": (
+            "Compared with no-tilt trials, leftward tilting produced markedly stronger behavioural responses. "
+            "Pupil dilation and eye movement were substantially more frequent under tilt, and both active and "
+            "passive locomotion also occurred at higher rates. These differences indicate that vestibular "
+            "perturbation reliably amplifies behavioural engagement."
+        )
+    },
+    {
+        "id": "stats_ex_0003",
+        "task_type": "condition_comparison",
+        "instruction": "Compare behavioural responses between the two tilt directions.",
+        "input": (
+            "tilt_left vs tilt_right. Pupil rates: 0.9795 vs 0.9801. Eye rates: 0.9949 vs 0.9950. "
+            "Active locomotion rates: 0.8718 vs 0.9552. Passive locomotion rates: 1.0000 vs 1.0000."
+        ),
+        "output": (
+            "The two tilt directions produced highly similar rates of pupil dilation, eye movement, and passive locomotion. "
+            "The main difference was in active locomotion, which was more frequent in rightward than in leftward tilt trials. "
+            "Overall, the data suggest broadly symmetric behavioural recruitment with a directional bias in voluntary movement."
+        )
+    },
+    {
+        "id": "stats_ex_0004",
+        "task_type": "biological_interpretation",
+        "instruction": "Provide a cautious biological interpretation of these event rates.",
+        "input": (
+            "Active freezing rates: tilt_left 0.4513, tilt_right 0.6368, no_tilt 0.9706. "
+            "Passive freezing rates: tilt_left 0.4718, tilt_right 0.6567, no_tilt 0.7941."
+        ),
+        "output": (
+            "Freezing-related events were most prevalent in the no-tilt condition and reduced during vestibular perturbation, "
+            "particularly for leftward tilt. This pattern is consistent with tilting shifting behaviour away from immobility-related "
+            "states and toward more overt sensory-motor responses."
+        )
+    },
+    {
+        "id": "stats_ex_0005",
+        "task_type": "results_writing",
+        "instruction": "Write a Results paragraph focusing on event timing.",
+        "input": (
+            "Pupil dilation times: tilt_left mean 2.3084 s, tilt_right mean 2.4635 s, no_tilt mean 2.3175 s. "
+            "Eye movement times: tilt_left 2.1799 s, tilt_right 2.2025 s, no_tilt 2.3813 s. "
+            "Active locomotion times: tilt_left 2.0850 s, tilt_right 2.0984 s, no_tilt 2.3244 s. "
+            "Passive locomotion times: tilt_left 2.0346 s, tilt_right 2.0520 s, no_tilt 2.1217 s."
+        ),
+        "output": (
+            "Event timing analyses revealed rapid responses following tilt onset. Passive locomotion occurred earliest, "
+            "followed by active locomotion and eye movement, whereas pupil dilation emerged later on average. "
+            "In contrast, no-tilt trials showed delayed eye and locomotor events, supporting the conclusion that "
+            "vestibular perturbation accelerates behavioural recruitment."
+        )
+    },
+    {
+        "id": "stats_ex_0006",
+        "task_type": "biological_interpretation",
+        "instruction": "Interpret the relationship between passive and active locomotion timing.",
+        "input": (
+            "passive_minus_active mean values: tilt_left -0.0521 s, tilt_right -0.0477 s, no_tilt -0.2084 s. "
+            "Negative values indicate passive earlier than active."
+        ),
+        "output": (
+            "Across all conditions, passive movement preceded active locomotion. This ordering is consistent with an initial "
+            "externally driven displacement followed by delayed voluntary or compensatory movement, rather than immediate active "
+            "locomotor initiation."
+        )
+    },
+    {
+        "id": "stats_ex_0007",
+        "task_type": "condition_comparison",
+        "instruction": "Compare pupil timing between tilt_left and tilt_right.",
+        "input": (
+            "Pupil dilation time: tilt_left mean 2.3084 s, median 2.2000 s; "
+            "tilt_right mean 2.4635 s, median 2.3000 s; Mann-Whitney p=0.001902."
+        ),
+        "output": (
+            "Pupil dilation occurred significantly earlier during leftward than rightward tilting. "
+            "Although both tilt directions produced high pupil response rates, the temporal profile differed, "
+            "with rightward tilt showing a delayed pupil response."
+        )
+    },
+    {
+        "id": "stats_ex_0008",
+        "task_type": "condition_comparison",
+        "instruction": "Compare active locomotion timing between tilt and no-tilt conditions.",
+        "input": (
+            "Active locomotion time: tilt_left mean 2.0850 s, no_tilt mean 2.3244 s, p<0.000001. "
+            "Tilt_right mean 2.0984 s, no_tilt mean 2.3244 s, p<0.000001."
+        ),
+        "output": (
+            "Active locomotion emerged significantly earlier in both tilt conditions than in no-tilt trials. "
+            "This temporal shift indicates that vestibular perturbation accelerates the onset of voluntary movement-related behaviour."
+        )
+    },
+    {
+        "id": "stats_ex_0009",
+        "task_type": "figure_to_text",
+        "instruction": "Write a figure-style summary from these timing differences.",
+        "input": (
+            "pupil_minus_eye: tilt_left mean 0.1284 s, tilt_right mean 0.2635 s, no_tilt mean -0.0063 s. "
+            "pupil_minus_active: tilt_left 0.2413 s, tilt_right 0.3673 s, no_tilt 0.0185 s."
+        ),
+        "output": (
+            "Relative timing analyses showed that pupil responses tended to occur later than both eye movement and active locomotion "
+            "in the tilt conditions, with the delay being more pronounced during rightward tilt. In contrast, timing offsets were "
+            "close to zero in no-tilt trials, indicating reduced temporal separation between events."
+        )
+    },
+    {
+        "id": "stats_ex_0010",
+        "task_type": "results_writing",
+        "instruction": "Write a concise Results paragraph based on statistical significance.",
+        "input": (
+            "Fisher exact tests: pupil tilt_left vs no_tilt p=0.000000, tilt_right vs no_tilt p=0.000000. "
+            "Eye tilt_left vs no_tilt p=0.000000, tilt_right vs no_tilt p=0.000000. "
+            "Active locomotion tilt_left vs tilt_right p=0.003691."
+        ),
+        "output": (
+            "Statistical comparisons confirmed strong condition-dependent effects on behavioural event occurrence. "
+            "Both tilt conditions showed significantly higher pupil and eye response rates than the no-tilt condition. "
+            "In addition, active locomotion differed significantly between the two tilt directions, indicating a selective "
+            "directional modulation of voluntary movement."
+        )
+    },
+    {
+        "id": "stats_ex_0011",
+        "task_type": "biological_interpretation",
+        "instruction": "Interpret the most common sequences in tilt_left.",
+        "input": (
+            "Most common sequences in tilt_left include: "
+            "'active -> passive -> eye -> pupil' (20), "
+            "'passive -> active_freeze -> active -> eye -> pupil' (14), "
+            "'active -> passive_freeze -> passive -> eye -> pupil' (9)."
+        ),
+        "output": (
+            "The dominant sequence patterns in leftward tilt trials indicate a structured progression linking locomotor, "
+            "freezing-related, and orienting events. Although several motifs were observed, many sequences converged on "
+            "a common ordering in which movement-related events preceded later eye and pupil responses."
+        )
+    },
+    {
+        "id": "stats_ex_0012",
+        "task_type": "biological_interpretation",
+        "instruction": "Interpret the most common sequences in no_tilt.",
+        "input": (
+            "Most common sequences in no_tilt include: "
+            "'active_freeze -> passive_freeze -> passive -> eye -> active' (8), "
+            "'active_freeze -> passive_freeze -> passive -> active' (7), "
+            "'active_freeze -> passive_freeze -> passive' (7)."
+        ),
+        "output": (
+            "In no-tilt trials, the most common motifs were dominated by freezing-related events, often followed by passive movement "
+            "with limited subsequent recruitment of other behaviours. This contrasts with the tilt conditions and suggests that, "
+            "without perturbation, the behavioural repertoire is biased toward immobility-related states."
+        )
+    },
+    {
+        "id": "stats_ex_0013",
+        "task_type": "condition_comparison",
+        "instruction": "Compare freezing behaviour between tilt_right and no_tilt.",
+        "input": (
+            "Active freezing rates: tilt_right 0.6368 vs no_tilt 0.9706, p=0.000000. "
+            "Passive freezing rates: tilt_right 0.6567 vs no_tilt 0.7941, p=0.002548."
+        ),
+        "output": (
+            "Both active and passive freezing were significantly reduced in rightward tilt trials relative to no-tilt trials. "
+            "This finding indicates that vestibular stimulation shifts behavioural expression away from freezing-associated events."
+        )
+    },
+    {
+        "id": "stats_ex_0014",
+        "task_type": "results_writing",
+        "instruction": "Write a Results paragraph emphasizing condition differences in active locomotion.",
+        "input": (
+            "Active locomotion rates: tilt_left 0.8718, tilt_right 0.9552, no_tilt 0.7941. "
+            "Fisher tests: tilt_left vs tilt_right p=0.003691; tilt_left vs no_tilt p=0.044414; "
+            "tilt_right vs no_tilt p=0.000001."
+        ),
+        "output": (
+            "Active locomotion varied significantly across conditions. Rightward tilting produced the highest active locomotion rate, "
+            "exceeding both leftward tilt and no-tilt conditions, whereas leftward tilt showed an intermediate level. "
+            "These results suggest that tilt direction modulates the probability of voluntary movement recruitment."
+        )
+    },
+    {
+        "id": "stats_ex_0015",
+        "task_type": "figure_to_text",
+        "instruction": "Summarize a correlation matrix in clear scientific language.",
+        "input": (
+            "Correlations: pupil_dilation_time_sec with pupil_minus_passive r=0.9701; "
+            "pupil_dilation_time_sec with pupil_minus_eye r=0.8703; "
+            "active_locomotion_time_sec with passive_minus_active r=-0.9146."
+        ),
+        "output": (
+            "Correlation analysis showed that pupil timing strongly determined relative pupil-to-movement delays, "
+            "particularly for the pupil-to-passive interval. In addition, active locomotion timing was tightly linked "
+            "to the passive-minus-active difference, indicating that changes in active movement timing strongly influence "
+            "the temporal separation between externally driven and voluntary locomotion components."
+        )
+    },
+    {
+        "id": "stats_ex_0016",
+        "task_type": "biological_interpretation",
+        "instruction": "Provide a cautious interpretation of early passive locomotion.",
+        "input": (
+            "Passive locomotion times: tilt_left 2.0346 s, tilt_right 2.0520 s, no_tilt 2.1217 s. "
+            "Passive locomotion rates: tilt_left 1.0000, tilt_right 1.0000, no_tilt 0.9608."
+        ),
+        "output": (
+            "Passive locomotion was both highly prevalent and temporally early in the tilt conditions. "
+            "This pattern is consistent with passive displacement representing an immediate consequence of perturbation, "
+            "preceding later active behavioural adjustment."
+        )
+    },
+    {
+        "id": "stats_ex_0017",
+        "task_type": "condition_comparison",
+        "instruction": "Compare eye movement timing across conditions.",
+        "input": (
+            "Eye movement time means: tilt_left 2.1799 s, tilt_right 2.2025 s, no_tilt 2.3813 s. "
+            "Mann-Whitney p-values: tilt_left vs tilt_right p=0.000092; tilt_left vs no_tilt p=0.040291; "
+            "tilt_right vs no_tilt p=0.241869."
+        ),
+        "output": (
+            "Eye movement timing differed modestly across conditions. Leftward tilt produced the earliest eye responses, "
+            "followed closely by rightward tilt, whereas no-tilt trials showed a delayed mean onset. "
+            "These results suggest that vestibular perturbation can accelerate orienting-related eye movement, particularly during leftward tilt."
+        )
+    },
+    {
+        "id": "stats_ex_0018",
+        "task_type": "results_writing",
+        "instruction": "Write a concise summary of the main biological highlights.",
+        "input": (
+            "Highest rates: pupil tilt_right 0.9801, eye tilt_right 0.9950, active locomotion tilt_right 0.9552, "
+            "passive locomotion tilt_left 1.0000. "
+            "Earliest mean timings: pupil tilt_left 2.3084 s, eye tilt_left 2.1799 s, active locomotion tilt_left 2.0850 s, "
+            "passive locomotion tilt_left 2.0346 s."
+        ),
+        "output": (
+            "The behavioural summary revealed a partial asymmetry between tilt directions. Rightward tilt yielded the highest "
+            "rates of pupil, eye, and active locomotor events, whereas leftward tilt was associated with the earliest mean onset "
+            "times across several behavioural domains. Together, these findings suggest that response magnitude and response timing "
+            "may be differentially modulated by tilt direction."
+        )
+    },
+    {
+        "id": "stats_ex_0019",
+        "task_type": "biological_interpretation",
+        "instruction": "Interpret the relationship between tilt and freezing reduction.",
+        "input": (
+            "Active freezing: tilt_left 0.4513, tilt_right 0.6368, no_tilt 0.9706. "
+            "Passive freezing: tilt_left 0.4718, tilt_right 0.6567, no_tilt 0.7941."
+        ),
+        "output": (
+            "Relative to no-tilt trials, both tilt conditions showed reduced freezing-related activity, with the reduction being more "
+            "pronounced for leftward tilt. This pattern is consistent with perturbation engaging more dynamic behavioural responses "
+            "at the expense of immobility-associated states."
+        )
+    },
+    {
+        "id": "stats_ex_0020",
+        "task_type": "condition_comparison",
+        "instruction": "Compare temporal structure between tilt_right and no_tilt.",
+        "input": (
+            "pupil_minus_active: tilt_right mean 0.3673 s, no_tilt mean 0.0185 s, p=0.000000. "
+            "pupil_minus_passive: tilt_right mean 0.4114 s, no_tilt mean 0.2119 s, p=0.000137. "
+            "eye_minus_active: tilt_right mean 0.1058 s, no_tilt mean 0.0328 s, p=0.000088."
+        ),
+        "output": (
+            "Rightward tilt produced a more clearly separated temporal structure than the no-tilt condition. "
+            "The larger positive pupil-to-active, pupil-to-passive, and eye-to-active intervals indicate that behavioural events "
+            "were more distinctly staggered in time during perturbation, whereas no-tilt trials showed a more compressed temporal profile."
+        )
+    }
+]
+
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+with open(output_path, "w", encoding="utf-8") as f:
+    for ex in examples:
+        f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+print(f"Saved {len(examples)} examples to:")
+print(output_path)
